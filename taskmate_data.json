@@ -1,0 +1,36 @@
+[
+  {
+    "id": "TASK-1763320397015-915",
+    "title": "Bhavik",
+    "description": "My first Task",
+    "status": "To-Do",
+    "priority": "high",
+    "timeSpent": 0.0,
+    "tags": [],
+    "createdAt": "2025-11-16 20:13:17",
+    "updatedAt": "2025-11-16 20:13:17"
+  },
+  {
+    "id": "TASK-1763320678562-765",
+    "title": "Bhavik-2",
+    "description": "New Task Added",
+    "status": "Done",
+    "priority": "medium",
+    "timeSpent": 0.033333335,
+    "endTime": "2025-11-16 20:20:30",
+    "tags": [],
+    "createdAt": "2025-11-16 20:17:58",
+    "updatedAt": "2025-11-16 20:21:15"
+  },
+  {
+    "id": "TASK-1763320902168-666",
+    "title": "Bhavik-3",
+    "description": "All New Task",
+    "status": "To-Do",
+    "priority": "low",
+    "timeSpent": 0.0,
+    "tags": [],
+    "createdAt": "2025-11-16 20:21:42",
+    "updatedAt": "2025-11-16 20:21:42"
+  }
+]
