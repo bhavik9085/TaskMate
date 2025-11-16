@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMate - Project Overview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+        .slide {
+            width: 100%;
+            max-width: 1200px;
+            min-height: 90vh;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        .slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+        h2 {
+            font-size: 48px;
+            color: #333;
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h3 {
+            font-size: 28px;
+            color: #667eea;
+            margin-bottom: 20px;
+            margin-top: 35px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        h3::before {
+            content: '';
+            width: 6px;
+            height: 28px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin-right: 15px;
+            border-radius: 3px;
+        }
+        p {
+            font-size: 20px;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            font-size: 18px;
+            color: #555;
+            line-height: 2;
+            margin-bottom: 15px;
+            padding-left: 35px;
+            position: relative;
+        }
+        li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature-item {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.2s;
+        }
+        .feature-item:hover {
+            transform: translateY(-2px);
+        }
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .slide {
+                box-shadow: none;
+                border-radius: 0;
+                min-height: 100vh;
+            }
+            .feature-item:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <h2>Project Overview & Features</h2>
+        
+        <h3>What is TaskMate?</h3>
+        <p>TaskMate is a lightweight, console-based project management application designed for programmers and teams to organize tasks efficiently using a Kanban-style board system.</p>
+        
+        <h3>Problem It Solves:</h3>
+        <ul>
+            <li>Helps track project progress visually</li>
+            <li>Manages time spent on tasks</li>
+            <li>Organizes work into clear workflow stages</li>
+            <li>Provides insights through reporting</li>
+        </ul>
+        
+        <h3>Key Features:</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <strong>✅ Kanban Board Visualization</strong><br>
+                See tasks in three columns
+            </div>
+            <div class="feature-item">
+                <strong>⏱️ Built-in Time Tracking</strong><br>
+                Start, pause, and stop timers
+            </div>
+            <div class="feature-item">
+                <strong>💾 MySQL Database Storage</strong><br>
+                Reliable data persistence
+            </div>
+            <div class="feature-item">
+                <strong>📤 JSON Import/Export</strong><br>
+                Easy backup and migration
+            </div>
+            <div class="feature-item">
+                <strong>🔍 Advanced Search & Filter</strong><br>
+                Find tasks by multiple criteria
+            </div>
+            <div class="feature-item">
+                <strong>📊 Comprehensive Reporting</strong><br>
+                Daily/weekly summaries
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMate - Core Operations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+        .slide {
+            width: 100%;
+            max-width: 1200px;
+            min-height: 90vh;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        .slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+        h2 {
+            font-size: 48px;
+            color: #333;
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h3 {
+            font-size: 26px;
+            color: #667eea;
+            margin-bottom: 15px;
+            margin-top: 30px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        h3::before {
+            content: '';
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin-right: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        h3.n1::before { content: '1'; }
+        h3.n2::before { content: '2'; }
+        h3.n3::before { content: '3'; }
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 25px;
+        }
+        li {
+            font-size: 17px;
+            color: #555;
+            line-height: 1.9;
+            margin-bottom: 12px;
+            padding-left: 70px;
+            position: relative;
+        }
+        li::before {
+            content: '✓';
+            position: absolute;
+            left: 40px;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 18px;
+            width: 24px;
+            height: 24px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .operation-card {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.03) 0%, rgba(118, 75, 162, 0.03) 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .slide {
+                box-shadow: none;
+                border-radius: 0;
+                min-height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <h2>Core Operations</h2>
+        
+        <div class="operation-card">
+            <h3 class="n1">Task Management</h3>
+            <ul>
+                <li>Create tasks with title, description, and priority</li>
+                <li>Edit task details anytime</li>
+                <li>Move tasks between status columns (To-Do ↔ In-Progress ↔ Done)</li>
+                <li>Delete tasks when no longer needed</li>
+                <li>Simple sequential IDs (T1, T2, T3...) for easy reference</li>
+            </ul>
+        </div>
+        
+        <div class="operation-card">
+            <h3 class="n2">Time Tracking</h3>
+            <ul>
+                <li>Start timer when beginning work on a task</li>
+                <li>Pause timer without losing progress</li>
+                <li>Stop timer to log time spent</li>
+                <li>Automatic time calculation and accumulation</li>
+                <li>Only one timer can run at a time</li>
+            </ul>
+        </div>
+        
+        <div class="operation-card">
+            <h3 class="n3">Task Organization & Search</h3>
+            <ul>
+                <li>Assign tasks to team members</li>
+                <li>Add multiple tags for categorization</li>
+                <li>Set priority levels (low, medium, high)</li>
+                <li>Search tasks by title or description keywords</li>
+                <li>Filter by priority, tag, or assigned user</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+

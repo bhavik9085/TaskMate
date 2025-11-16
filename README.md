@@ -73,12 +73,12 @@ final_project/
    - Verify: `mysql --version`
    - Make sure MySQL service is running
 
-3. **Maven** (Optional - Cursor handles it automatically)
+3. **Maven** (Optional - VS Code handles it automatically)
    - Verify: `mvn -version`
 
-### Running in Cursor IDE
+### Running in VS Code IDE
 
-1. **Install Java Extension Pack** in Cursor:
+1. **Install Java Extension Pack** in VS Code:
    - Press `Ctrl+Shift+X` → Search "Extension Pack for Java" → Install
 
 2. **Set up MySQL Database:**
@@ -86,7 +86,7 @@ final_project/
    - Or run the schema script: `mysql -u root -p < src/main/resources/database_schema.sql`
    - Configure connection in `src/main/resources/database.properties`
 
-3. **Open the project folder** in Cursor
+3. **Open the project folder** in VS Code
 
 4. **Wait for dependencies to load** (check bottom right corner)
 
@@ -283,13 +283,6 @@ Shows complete statistics:
 - Check file permissions for JSON file
 - Ensure JSON file format is valid
 - Verify file path is correct
-
-## 📚 Documentation
-
-- `PROJECT_OVERVIEW.md` - Detailed project explanation
-- `SETUP_GUIDE.md` - Step-by-step setup instructions
-- `CURSOR_RUN_GUIDE.md` - Running in Cursor IDE
-- `RUN_WITHOUT_MAVEN.md` - Alternative setup methods
 
 ## 🔮 Future Enhancements
 
