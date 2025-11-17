@@ -64,14 +64,13 @@ The following table lists all the modules and libraries used in the TaskMate pro
 ### 1. Add New Task
 
 **Screenshot Before:**
-```
+
 <img width="1626" height="959" alt="image" src="https://github.com/user-attachments/assets/65a51fea-40bb-42a2-b533-3cf046fec7a3" />
-```
+
 
 **Screenshot After:**
-```
+
 <img width="1664" height="1343" alt="image" src="https://github.com/user-attachments/assets/945630dc-13e3-4711-ac8d-d50174e932b0" />
-```
 
 **Explanation:**
 Users can create new tasks by selecting option 1 from the main menu. The system prompts for task title, description (optional), and priority level (low/medium/high). Upon successful creation, the task is automatically assigned a unique sequential ID (T1, T2, T3, etc.) and appears in the "To-Do" column of the Kanban board. The task is immediately saved to the MySQL database for persistence.
