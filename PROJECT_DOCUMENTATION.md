@@ -70,7 +70,8 @@ The following table lists all the modules and libraries used in the TaskMate pro
 
 **Screenshot After:**
 
-<img width="1664" height="1343" alt="image" src="https://github.com/user-attachments/assets/945630dc-13e3-4711-ac8d-d50174e932b0" />
+<img width="1635" height="627" alt="image" src="https://github.com/user-attachments/assets/2f76e23e-e7cc-4be3-a019-6576626c382d" />
+
 
 **Explanation:**
 Users can create new tasks by selecting option 1 from the main menu. The system prompts for task title, description (optional), and priority level (low/medium/high). Upon successful creation, the task is automatically assigned a unique sequential ID (T1, T2, T3, etc.) and appears in the "To-Do" column of the Kanban board. The task is immediately saved to the MySQL database for persistence.
@@ -80,14 +81,14 @@ Users can create new tasks by selecting option 1 from the main menu. The system 
 ### 2. Edit Task
 
 **Screenshot Before:**
-```
-[Placeholder: Screenshot showing task details before editing]
-```
+
+<img width="1635" height="970" alt="image" src="https://github.com/user-attachments/assets/f3d8880c-c43f-4dee-b7d0-6a7bc742753e" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing updated task details after editing]
-```
+
+<img width="1637" height="1347" alt="image" src="https://github.com/user-attachments/assets/e3f85725-7763-4a01-b34d-095e5371c424" />
+
 
 **Explanation:**
 The edit functionality allows users to modify existing task properties including title, description, and priority. Users select option 2, enter the task ID, and can update any field by entering new values or pressing Enter to keep current values. Changes are immediately reflected in the database and displayed on the Kanban board.
@@ -97,14 +98,14 @@ The edit functionality allows users to modify existing task properties including
 ### 3. Move Task (Change Status)
 
 **Screenshot Before:**
-```
-[Placeholder: Screenshot showing task in "To-Do" column]
-```
+
+<img width="1633" height="982" alt="image" src="https://github.com/user-attachments/assets/e0486e63-adef-427f-a1b7-58d7b45ff4cb" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing the same task moved to "In-Progress" column]
-```
+
+<img width="1633" height="1073" alt="image" src="https://github.com/user-attachments/assets/80776a48-e2eb-4dc6-a614-9b06eb81dda0" />
+
 
 **Explanation:**
 Tasks can be moved between the three workflow stages: To-Do, In-Progress, and Done. Users select option 3, choose the task ID, and select the new status. This feature enables visual workflow management, allowing users to track task progress through different stages of completion.
@@ -114,14 +115,14 @@ Tasks can be moved between the three workflow stages: To-Do, In-Progress, and Do
 ### 4. Delete Task
 
 **Screenshot Before:**
-```
-[Placeholder: Screenshot showing Kanban board with task present]
-```
+
+<img width="1637" height="981" alt="image" src="https://github.com/user-attachments/assets/7c2df70c-08a3-4a67-bf17-05b326f8cb74" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing Kanban board after task deletion]
-```
+
+<img width="1640" height="1259" alt="image" src="https://github.com/user-attachments/assets/4ad9b39d-d9c8-4cab-aa68-77d17b3ed41e" />
+
 
 **Explanation:**
 The delete functionality removes tasks permanently from the system. Users select option 4, enter the task ID, and confirm deletion. The system removes the task from the database and all associated tags, ensuring data consistency. A confirmation prompt prevents accidental deletions.
