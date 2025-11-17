@@ -65,12 +65,12 @@ The following table lists all the modules and libraries used in the TaskMate pro
 
 **Screenshot Before:**
 ```
-[Placeholder: Screenshot showing Kanban board with existing tasks before adding a new task]
+<img width="1626" height="959" alt="image" src="https://github.com/user-attachments/assets/65a51fea-40bb-42a2-b533-3cf046fec7a3" />
 ```
 
 **Screenshot After:**
 ```
-[Placeholder: Screenshot showing Kanban board with the newly added task in the To-Do column]
+<img width="1664" height="1343" alt="image" src="https://github.com/user-attachments/assets/945630dc-13e3-4711-ac8d-d50174e932b0" />
 ```
 
 **Explanation:**
