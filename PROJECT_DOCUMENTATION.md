@@ -278,32 +278,8 @@ Viewing task details displays comprehensive information about a specific task, i
 **Screenshot After:**
 
 <img width="1191" height="277" alt="image" src="https://github.com/user-attachments/assets/17ac3dbd-8667-48fb-8807-5a4f6e32790b" />
-[Uploading taskmate_export_20251[
-  {
-    "id": "T2",
-    "title": "Old Task - 01",
-    "description": "",
-    "status": "To-Do",
-    "priority": "low",
-    "timeSpent": 0.0,
-    "tags": [],
-    "createdAt": "2025-11-19 21:22:03",
-    "updatedAt": "2025-11-19 21:22:03"
-  },
-  {
-    "id": "T1",
-    "title": "New Task - 01",
-    "description": "abcdefghijklmnopqrstuvwxyz",
-    "status": "In-Progress",
-    "priority": "high",
-    "timeSpent": 0.0166667,
-    "endTime": "2025-11-19 21:16:06",
-    "tags": [],
-    "assignedTo": "Bhavik-GM186Q",
-    "createdAt": "2025-11-19 21:13:15",
-    "updatedAt": "2025-11-19 21:20:25"
-  }
-]119_212709.json…]()
+<img width="756" height="1012" alt="image" src="https://github.com/user-attachments/assets/e2bbaf2e-8249-42a7-afc2-85cd5336fd72" />
+
 
 
 **Explanation:**
@@ -314,42 +290,8 @@ The export functionality saves all tasks from the database to a JSON file, inclu
 ### 15. Import from JSON File
 
 **Data to Import (kept in root folder):**
-[Uploading taskmate_data[
-  {
-    "id": "TASK-1763320397015-915",
-    "title": "Bhavik",
-    "description": "My first Task",
-    "status": "To-Do",
-    "priority": "high",
-    "timeSpent": 0.0,
-    "tags": [],
-    "createdAt": "2025-11-16 20:13:17",
-    "updatedAt": "2025-11-16 20:13:17"
-  },
-  {
-    "id": "TASK-1763320678562-765",
-    "title": "Bhavik-2",
-    "description": "New Task Added",
-    "status": "Done",
-    "priority": "medium",
-    "timeSpent": 0.033333335,
-    "endTime": "2025-11-16 20:20:30",
-    "tags": [],
-    "createdAt": "2025-11-16 20:17:58",
-    "updatedAt": "2025-11-16 20:21:15"
-  },
-  {
-    "id": "TASK-1763320902168-666",
-    "title": "Bhavik-3",
-    "description": "All New Task",
-    "status": "To-Do",
-    "priority": "low",
-    "timeSpent": 0.0,
-    "tags": [],
-    "createdAt": "2025-11-16 20:21:42",
-    "updatedAt": "2025-11-16 20:21:42"
-  }
-].json…]()
+
+<img width="703" height="1293" alt="image" src="https://github.com/user-attachments/assets/3337ce3d-0b5c-492a-8cd1-c2805b882435" />
 
 
 **Screenshot After:**
