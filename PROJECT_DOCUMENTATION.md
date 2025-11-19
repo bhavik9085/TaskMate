@@ -1,4 +1,4 @@
-[taskmate_data.json](https://github.com/user-attachments/files/23636991/taskmate_data.json)[taskmate_export_20251119_212709.json](https://github.com/user-attachments/files/23636981/taskmate_export_20251119_212709.json)# TaskMate - Project Documentation
+# TaskMate - Project Documentation
 
 **Name:** Bhavik Parmar  
 **Neptun Code:** GM186Q
