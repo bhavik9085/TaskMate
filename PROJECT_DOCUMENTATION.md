@@ -64,14 +64,14 @@ The following table lists all the modules and libraries used in the TaskMate pro
 ### 1. Add New Task
 
 **Screenshot Before:**
-```
-[Placeholder: Screenshot showing Kanban board with existing tasks before adding a new task]
-```
+
+<img width="1626" height="959" alt="image" src="https://github.com/user-attachments/assets/65a51fea-40bb-42a2-b533-3cf046fec7a3" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing Kanban board with the newly added task in the To-Do column]
-```
+
+<img width="1635" height="627" alt="image" src="https://github.com/user-attachments/assets/2f76e23e-e7cc-4be3-a019-6576626c382d" />
+
 
 **Explanation:**
 Users can create new tasks by selecting option 1 from the main menu. The system prompts for task title, description (optional), and priority level (low/medium/high). Upon successful creation, the task is automatically assigned a unique sequential ID (T1, T2, T3, etc.) and appears in the "To-Do" column of the Kanban board. The task is immediately saved to the MySQL database for persistence.
@@ -81,14 +81,14 @@ Users can create new tasks by selecting option 1 from the main menu. The system 
 ### 2. Edit Task
 
 **Screenshot Before:**
-```
-[Placeholder: Screenshot showing task details before editing]
-```
+
+<img width="1635" height="970" alt="image" src="https://github.com/user-attachments/assets/f3d8880c-c43f-4dee-b7d0-6a7bc742753e" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing updated task details after editing]
-```
+
+<img width="1637" height="1347" alt="image" src="https://github.com/user-attachments/assets/e3f85725-7763-4a01-b34d-095e5371c424" />
+
 
 **Explanation:**
 The edit functionality allows users to modify existing task properties including title, description, and priority. Users select option 2, enter the task ID, and can update any field by entering new values or pressing Enter to keep current values. Changes are immediately reflected in the database and displayed on the Kanban board.
@@ -98,14 +98,14 @@ The edit functionality allows users to modify existing task properties including
 ### 3. Move Task (Change Status)
 
 **Screenshot Before:**
-```
-[Placeholder: Screenshot showing task in "To-Do" column]
-```
+
+<img width="1633" height="982" alt="image" src="https://github.com/user-attachments/assets/e0486e63-adef-427f-a1b7-58d7b45ff4cb" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing the same task moved to "In-Progress" column]
-```
+
+<img width="1633" height="1073" alt="image" src="https://github.com/user-attachments/assets/80776a48-e2eb-4dc6-a614-9b06eb81dda0" />
+
 
 **Explanation:**
 Tasks can be moved between the three workflow stages: To-Do, In-Progress, and Done. Users select option 3, choose the task ID, and select the new status. This feature enables visual workflow management, allowing users to track task progress through different stages of completion.
@@ -115,14 +115,14 @@ Tasks can be moved between the three workflow stages: To-Do, In-Progress, and Do
 ### 4. Delete Task
 
 **Screenshot Before:**
-```
-[Placeholder: Screenshot showing Kanban board with task present]
-```
+
+<img width="1637" height="981" alt="image" src="https://github.com/user-attachments/assets/7c2df70c-08a3-4a67-bf17-05b326f8cb74" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing Kanban board after task deletion]
-```
+
+<img width="1640" height="1259" alt="image" src="https://github.com/user-attachments/assets/4ad9b39d-d9c8-4cab-aa68-77d17b3ed41e" />
+
 
 **Explanation:**
 The delete functionality removes tasks permanently from the system. Users select option 4, enter the task ID, and confirm deletion. The system removes the task from the database and all associated tags, ensuring data consistency. A confirmation prompt prevents accidental deletions.
@@ -132,14 +132,18 @@ The delete functionality removes tasks permanently from the system. Users select
 ### 5. Start Timer
 
 **Screenshot Before:**
-```
-[Placeholder: Screenshot showing task without timer running]
-```
+
+<img width="1642" height="976" alt="image" src="https://github.com/user-attachments/assets/4420d4e3-922e-439b-bb98-5d4dbf049d7b" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing task with timer indicator (⏱) and moved to In-Progress]
-```
+
+<img width="1634" height="511" alt="image" src="https://github.com/user-attachments/assets/f031ba02-9a3d-4bd8-b65b-bee3f3040686" />
+
+**After 2 Minutes**
+
+<img width="1639" height="258" alt="image" src="https://github.com/user-attachments/assets/e83d501f-d224-4648-9011-81037c0d7019" />
+
 
 **Explanation:**
 Starting a timer begins time tracking for a selected task. When a timer is started, the task automatically moves to "In-Progress" status if it was in "To-Do". The system records the start time and displays a timer indicator (⏱) next to the task on the Kanban board. Only one timer can run at a time.
@@ -149,14 +153,14 @@ Starting a timer begins time tracking for a selected task. When a timer is start
 ### 6. Stop Timer
 
 **Screenshot Before:**
-```
-[Placeholder: Screenshot showing task with timer running]
-```
+
+<img width="1638" height="929" alt="image" src="https://github.com/user-attachments/assets/a3536602-7065-4270-a186-e705e522489a" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing task with timer stopped and accumulated time displayed]
-```
+
+<img width="1662" height="833" alt="image" src="https://github.com/user-attachments/assets/d3bbf649-9ea4-4448-afc6-cb02a5026110" />
+
 
 **Explanation:**
 Stopping the timer ends time tracking and calculates the total time spent. The elapsed time is added to the task's total time spent counter, and the timer indicator is removed. The task remains in its current status, allowing users to continue working or move it to "Done" when complete.
@@ -164,16 +168,6 @@ Stopping the timer ends time tracking and calculates the total time spent. The e
 ---
 
 ### 7. Pause Timer
-
-**Screenshot Before:**
-```
-[Placeholder: Screenshot showing timer running]
-```
-
-**Screenshot After:**
-```
-[Placeholder: Screenshot showing timer paused with accumulated time preserved]
-```
 
 **Explanation:**
 Pausing a timer temporarily stops time tracking without ending the session. The accumulated time up to the pause point is saved, and the timer can be resumed later. This feature is useful for taking breaks while maintaining accurate time tracking without losing progress.
@@ -183,14 +177,15 @@ Pausing a timer temporarily stops time tracking without ending the session. The 
 ### 8. Assign Task to User
 
 **Screenshot Before:**
-```
-[Placeholder: Screenshot showing task with "Unassigned" status]
-```
+
+<img width="1640" height="705" alt="image" src="https://github.com/user-attachments/assets/55a6c95c-39d7-4cc1-bce8-4b4dfc296a24" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing task assigned to a specific user]
-```
+
+<img width="1632" height="573" alt="image" src="https://github.com/user-attachments/assets/065204b8-1bbf-4e6a-8544-080438e7f9cc" />
+<img width="1640" height="699" alt="image" src="https://github.com/user-attachments/assets/277fe48f-6ecd-4e3e-881b-9b86ed9927dc" />
+
 
 **Explanation:**
 Tasks can be assigned to team members for better collaboration and accountability. Users select option 8, enter the task ID, and specify the assignee's name. The assigned user information is stored in the database and displayed when viewing task details, enabling team members to identify their responsibilities.
@@ -198,16 +193,6 @@ Tasks can be assigned to team members for better collaboration and accountabilit
 ---
 
 ### 9. Add Tag to Task
-
-**Screenshot Before:**
-```
-[Placeholder: Screenshot showing task without tags]
-```
-
-**Screenshot After:**
-```
-[Placeholder: Screenshot showing task with added tags displayed]
-```
 
 **Explanation:**
 Tags provide a flexible categorization system for tasks. Users can add multiple tags to a single task, enabling filtering and organization by project, feature, bug type, or any custom category. Tags are stored in a separate junction table in the database, maintaining a many-to-many relationship between tasks and tags.
@@ -217,14 +202,14 @@ Tags provide a flexible categorization system for tasks. Users can add multiple 
 ### 10. Search Tasks
 
 **Screenshot Before:**
-```
-[Placeholder: Screenshot showing search prompt]
-```
+
+<img width="1646" height="968" alt="image" src="https://github.com/user-attachments/assets/3f0589ed-1c3a-4c01-bf23-49493a136fc2" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing search results matching the query]
-```
+
+<img width="1645" height="443" alt="image" src="https://github.com/user-attachments/assets/964642d8-4f2d-4f2c-bdd2-98c1f587cae9" />
+
 
 **Explanation:**
 The search functionality allows users to find tasks by entering keywords that match task titles or descriptions. The system performs a case-insensitive search across all tasks and displays matching results in a formatted list. This feature helps users quickly locate specific tasks in large project boards.
@@ -234,14 +219,15 @@ The search functionality allows users to find tasks by entering keywords that ma
 ### 11. Filter Tasks
 
 **Screenshot Before:**
-```
-[Placeholder: Screenshot showing all tasks on the board]
-```
+
+<img width="1636" height="982" alt="image" src="https://github.com/user-attachments/assets/763da403-9c9e-4dbc-b718-d774b83204de" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing filtered results based on selected criteria]
-```
+
+<img width="1647" height="577" alt="image" src="https://github.com/user-attachments/assets/a40779c3-8056-47de-9814-585da00131ae" />
+
+
 
 **Explanation:**
 Filtering enables users to view subsets of tasks based on specific criteria: priority level (low/medium/high), tags, or assigned user. Users select the filter type and enter the filter value. The system displays only matching tasks, making it easier to focus on specific categories or priorities.
@@ -251,14 +237,14 @@ Filtering enables users to view subsets of tasks based on specific criteria: pri
 ### 12. Generate Report
 
 **Screenshot Before:**
-```
-[Placeholder: Screenshot showing report menu options]
-```
+
+<img width="1631" height="964" alt="image" src="https://github.com/user-attachments/assets/a11d906a-b476-4445-a9ae-bbfc5abf3282" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing generated report with time statistics]
-```
+
+<img width="1001" height="873" alt="image" src="https://github.com/user-attachments/assets/d9c2970a-b4f3-4eb1-9ce4-388e2d786e4e" />
+
 
 **Explanation:**
 The reporting system generates three types of reports: daily reports showing time spent on a specific date, weekly reports with daily breakdowns and averages, and overall summary reports with complete project statistics. Reports include total time spent, task counts by status, and time distribution, providing valuable insights into project progress and productivity.
@@ -268,14 +254,14 @@ The reporting system generates three types of reports: daily reports showing tim
 ### 13. View Task Details
 
 **Screenshot Before:**
-```
-[Placeholder: Screenshot showing Kanban board view]
-```
+
+<img width="1645" height="986" alt="image" src="https://github.com/user-attachments/assets/3ac20232-9bd4-4278-b9a3-bde7c8ef9dc0" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing detailed task information display]
-```
+
+<img width="1640" height="825" alt="image" src="https://github.com/user-attachments/assets/66ab1d05-bab9-4994-96f3-49556debd94e" />
+
 
 **Explanation:**
 Viewing task details displays comprehensive information about a specific task, including ID, title, description, status, priority, time spent, assigned user, tags, and timer status. This feature provides a complete overview of task properties that may not be fully visible in the compact Kanban board display.
@@ -285,14 +271,16 @@ Viewing task details displays comprehensive information about a specific task, i
 ### 14. Export to JSON File
 
 **Screenshot Before:**
-```
-[Placeholder: Screenshot showing export menu option]
-```
+
+<img width="1635" height="972" alt="image" src="https://github.com/user-attachments/assets/43cbe608-0625-421d-8808-42699be9ee34" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing confirmation message and JSON file content]
-```
+
+<img width="1191" height="277" alt="image" src="https://github.com/user-attachments/assets/17ac3dbd-8667-48fb-8807-5a4f6e32790b" />
+<img width="756" height="1012" alt="image" src="https://github.com/user-attachments/assets/e2bbaf2e-8249-42a7-afc2-85cd5336fd72" />
+
+
 
 **Explanation:**
 The export functionality saves all tasks from the database to a JSON file, including all task properties, tags, and metadata. Users can specify a custom file path or use the default location. This feature enables data backup, migration to other systems, or sharing task data with team members.
@@ -301,15 +289,15 @@ The export functionality saves all tasks from the database to a JSON file, inclu
 
 ### 15. Import from JSON File
 
-**Screenshot Before:**
-```
-[Placeholder: Screenshot showing import menu option]
-```
+**Data to Import (kept in root folder):**
+
+<img width="703" height="1293" alt="image" src="https://github.com/user-attachments/assets/3337ce3d-0b5c-492a-8cd1-c2805b882435" />
+
 
 **Screenshot After:**
-```
-[Placeholder: Screenshot showing imported tasks added to the Kanban board]
-```
+
+<img width="1649" height="690" alt="image" src="https://github.com/user-attachments/assets/c9d11d5f-f60e-447c-a03b-64c3c6b7a6be" />
+
 
 **Explanation:**
 Import functionality restores tasks from a previously exported JSON file. The system reads the JSON data, validates the format, and inserts tasks into the database. This feature enables data restoration, migration from other systems, or bulk task creation, making it easy to set up new project boards or recover from backups.
